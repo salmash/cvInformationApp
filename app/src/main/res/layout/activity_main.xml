@@ -1,0 +1,407 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1300dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:translationY="100dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/philosopher"
+                android:text="* This Button will Delete Retrieved data in this page :"
+                android:textColor="#331A04"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/delete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="289dp"
+                android:layout_height="60dp"
+                android:background="#EDEDE9"
+                android:fontFamily="@font/philosopher"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="CV Form"
+                android:textColor="#308285"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="233dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="16dp"
+                android:background="#370B201F"
+                android:fontFamily="@font/philosopher"
+                android:gravity="center"
+                android:text="Personal Information"
+                android:textColor="#FDFDFD"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="238dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#170C03"
+                android:onClick="deleteOnClick"
+                android:text="Delete Information"
+                app:layout_constraintBottom_toTopOf="@+id/textView1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationY="350dp">
+
+            <LinearLayout
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="First Name :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Last Name :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Email :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Gender :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Year of Birth :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Phone Number :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="is Student :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="City :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Marital Status :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your first name"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="Enter your last name"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <CheckBox
+                        android:id="@+id/female"
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxWidth="80dp"
+                        android:text="Female" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/dateOfBirth"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your birthday date"
+                    android:inputType="date"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your phone number"
+                    android:inputType="phone"
+                    android:textSize="15sp" />
+
+                <Switch
+                    android:id="@+id/isStudent"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/philosopher"
+                    android:minHeight="50dp"
+                    android:text="Student"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/cities"
+                    android:layout_width="190dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/maritalStatus"
+                    android:layout_width="190dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="502dp"
+            android:translationY="800dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="379dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/philosopher"
+                android:gravity="center"
+                android:text="The percentage of free time from your day :"
+                android:textColor="#308285"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="249dp"
+                android:layout_height="137dp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                app:layout_constraintVertical_bias="0.734"
+                app:srcCompat="@drawable/im" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="44dp"
+                android:backgroundTint="#194C77"
+                android:onClick="btnOnClick"
+                android:text="Fill Education and Work Experience>"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                android:layout_width="251dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="378dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#308285"
+                android:foregroundTint="#0E1C1C"
+                android:indeterminateTint="#9E3333"
+                android:scrollbarSize="10dp"
+                android:secondaryProgressTint="#EFA9A9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/perc"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="#308285"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+                app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                app:layout_constraintStart_toStartOf="@+id/progressBar"
+                app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+</ScrollView>
+

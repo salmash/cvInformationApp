@@ -1,0 +1,372 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bck2"
+        android:minHeight="1000dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp">
+
+
+            <Button
+                android:id="@+id/delete2"
+                android:layout_width="199dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#170C03"
+                android:onClick="deleteOnClick"
+                android:text="Delete Page Data"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.262" />
+
+            <TextView
+                android:id="@+id/textView363"
+                android:layout_width="138dp"
+                android:layout_height="51dp"
+                android:background="#370B201F"
+                android:fontFamily="@font/philosopher"
+                android:gravity="center"
+                android:text="Education"
+                android:textColor="#308285"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.692" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:orientation="horizontal"
+            android:translationY="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView126"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Degree :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="University :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Specialization :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Specialization Rate :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/degree"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:id="@+id/universityName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your university name"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/specialization"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your specialization"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/specializationRate"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:ems="10"
+                    android:hint="Enter your rate"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:translationY="300dp">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="202dp"
+                android:layout_height="60dp"
+                android:background="#370B201F"
+                android:fontFamily="@font/philosopher"
+                android:gravity="center"
+                android:text="Work Experience"
+                android:textColor="#308285"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.023"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.636" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:orientation="horizontal"
+            android:translationY="400dp">
+
+            <LinearLayout
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Job Title :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Job Address :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Company Name :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Given Salary :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:fontFamily="@font/philosopher"
+                    android:text="Other Jobs :"
+                    android:textColor="#308285"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/jobTitle"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your job title"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/jobAddress"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your job address"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/companyName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="Enter your company name"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/salary"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:ems="10"
+                    android:hint="Enter your salary"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/otherJobs"
+                    android:layout_width="180dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#0F0B201F"
+                    android:gravity="top"
+                    android:hint="Enter other jobs"
+                    android:padding="2dp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#194C77"
+                    android:onClick="submitOnClick"
+                    android:text="Submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.75"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#000000"
+                    android:onClick="exitOnClick"
+                    android:text="Exit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.75"
+                    app:layout_constraintStart_toStartOf="parent" /><![CDATA[
+
+                />
+
+            ]]>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</ScrollView>
+
